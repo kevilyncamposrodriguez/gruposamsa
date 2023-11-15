@@ -1,0 +1,210 @@
+/* General
+
+padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dac400;*/
+.content-book {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dac400;
+}
+
+/* Button */
+.buttonB {
+
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonB:focus {
+    outline: none;
+}
+
+.buttonB:hover i {
+    color: rgb(208, 205, 205);
+}
+
+.iB {
+    color: transparent;
+    font-size: 4em;
+}
+
+/* Book */
+.book {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 25em;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.paper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front {
+    backface-visibility: hidden;
+    border-left: 3px solid #dac400;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 0.5s;
+    border-radius: 2px 10px 10px 2px;
+}
+
+.front {
+    z-index: 1;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper Flipped */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg)
+}
+
+/* Paper Z-index */
+#p1 {
+
+    z-index: 16;
+}
+
+#p2 {
+    z-index: 15;
+}
+
+#p3 {
+    z-index: 14;
+}
+
+#p4 {
+
+    z-index: 13;
+}
+
+#p5 {
+    z-index: 12;
+}
+
+#p6 {
+    z-index: 11;
+}
+
+#p7 {
+
+    z-index: 10;
+}
+
+#p8 {
+    z-index: 9;
+}
+
+#p9 {
+    z-index: 8;
+}
+
+#p10 {
+
+    z-index: 7;
+}
+
+#p11 {
+    z-index: 6;
+}
+
+#p12 {
+    z-index: 5;
+}
+
+#p13 {
+
+    z-index: 4;
+}
+
+#p14 {
+    z-index: 3;
+}
+
+#p15 {
+    z-index: 2;
+}
+
+#p16 {
+
+    z-index: 1;
+}
+
+/* Customization */
+
+.book-title {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.cover-img {
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#b1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    justify-content: space-around;
+}
+
+#b1 h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#b1 p {
+    margin-bottom: 20px;
+}
