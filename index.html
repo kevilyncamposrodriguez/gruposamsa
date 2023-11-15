@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GRUPO SAMSA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-header ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><i class="far text-primary me-2"></i> </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@samsacr.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+506 7201 9221</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"></i>CORPORACIÓN GRUPO SAMSA</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="service.html" class="nav-item nav-link">Productos</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestras Marcas</a>
+                    <div class="dropdown-menu m-0">
+                        <a target="_blank" href="https://www.facebook.com/DeliBebidasNaturales"
+                            class="dropdown-item">D'li</a>
+                        <a target="_blank" href="https://www.facebook.com/fresquezza"
+                            class="dropdown-item">Fresquezza</a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100083300232945"
+                            class="dropdown-item">Petti Box</a>
+                        <a target="_blank" href="https://samsaporcostarica.com/" class="dropdown-item">Samsa por Costa
+                            Rica</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+            </div>
+            
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">AGENDAR VISITA O LLAMADA</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown"></h5>
+
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">CREAMOS PRODUCTOS INNOVADORES QUE
+                                FACILITAN LA VIDA DE NUESTROS CLIENTES.</h1><br>
+                            <a HIDDEN href="appointment.html"
+                                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
+                            <a HIDDEN href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown"></h5>
+                            <br><br><br>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">CUBRIMOS LAS NECESIDADES DE
+                                NUESTROS CLIENTES DE UNA MANERA EFECTIVA.</h1>
+                            <a HIDDEN href="appointment.html"
+                                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
+                            <a HIDDEN href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown"></h5>
+                            <br><br><br>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">BUSCAMOS LA DIFERENCIACIÓN DE
+                                NUESTROS PRODUCTOS Y SERVICIOS.</h1>
+                            <a HIDDEN href="appointment.html"
+                                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
+                            <a HIDDEN href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s">
+        <div style="width: 90%; margin: auto;">
+            <div class="row" style="width: 100%; margin:auto;">
+                <div class="col-lg-7">
+                    <div class="section-title mb-4">
+                        <BR>
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">NOSOTROS</h5>
+                        <h1 class="display-5 mb-0 justify-content-center">CORPORACIÓN GRUPO SAMSA DE CENTROAMÉRICA</h1>
+                    </div>
+                    <h5 class="text-body  mb-4 justify-content-around text-justified">En el año de 1980, GRUPO SAMSA dio
+                        sus primeros
+                        pasos gracias a Juan José Quesada Garita, quien tuvo sus inicios con solamente la
+                        comercialización de mora. Con el paso del tiempo, y la adquisición de conocimientos en la
+                        industria alimentaria, Juan José notó que dicha industria demandaba más variedad de productos,
+                        así inició un nuevo camino hacia la diversificación de productos incluyendo la comercialización
+                        de frutas exóticas como el maracuyá, cas, naranjilla, carambola, granadilla entre otros, las
+                        cuales son producidas por agricultores nacionales asegurando con esto, la calidad y frescura,
+                        ayudando al mismo tiempo a la economía del país. Dichos productos llegaron a cubrir muchas de
+                        las necesidades que, en aquel tiempo, la industria requería, y fue desde ese día que GRUPO SAMSA
+                        se convirtió hasta el día de hoy, en una empresa pionera e innovadora en la comercialización de
+                        productos de alta calidad.</h5>
+                    <br>
+
+                    <p class="mb-4"></p>
+                    <div class="row g-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                            <h4 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Frescura insuperable
+                            </h4>
+                            <h4 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Personal altamente
+                                calificado</h4>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                            <h4 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Productos innovadores
+                            </h4>
+                            <h4 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Precios competitivos
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+
+                    <!--AQUI INICIA EL NUEVO CARRUSEL-->
+                    <div style="width: 100%; height: 35em">
+                        <div id="header-carousel2" style="width: 100%; height: 35em"
+                            class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner-2">
+                                <div class="carousel-item active">
+                                    <img style="width: 100%; height: 25em; border-radius: 5%; margin-top: 90px; margin-bottom: 10px;"
+                                        src="img/planta1.jpg" alt="Image">
+
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="width: 100%; height: 25em; border-radius: 5%; margin-top: 90px; margin-bottom: 10px;"
+                                        src="img/planta2.jpg" alt="Image">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img style="width: 100%; height: 25em; border-radius: 5%; margin-top: 90px; margin-bottom: 10px;"
+                                        src="img/planta3.jpg" alt="Image">
+
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--AQUI FINALIZA EL NUEVO CARRUSEL-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Appointment Start -->
+    <div class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s">
+
+        <div class="row gx-5">
+            <div class="col-lg-6 py-5">
+                <div class="py-5">
+                    <h3 class="display-5 text-white mb-4"> EN CORPORACIÓN GRUPO SAMSA ESTAMOS ATENTOS A TUS COMENTARIOS,
+                        AGENDANOS UNA CITA DE CONTACTO </h3>
+                    <br>
+                    <p class="text-white mb-0">Grupo Samsa, te ofrece gran variedad de productos y ofertas, donde
+                        inclusive se da la oportunidad de convertirse en uno de nuestros distribuidores de clase
+                        Mayorista.
+                        <br>
+                        Dejanos tus datos y con gusto te estaremos contactando.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+                    data-wow-delay="0.6s">
+                    <h1 class="text-white mb-4">SOLICITUD DE CONTACTO</h1>
+                    <form id="sendMail" action="contact_process.php" method="post">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select bg-light border-0" name="departamento" id="departamento"
+                                    style="height: 55px;">
+                                    <option selected>Seleccione un Departamento</option>
+                                    <option value="1">Ventas</option>
+                                    <option value="2">Servicio al Cliente</option>
+                                    <option value="3">Recursos Humanos</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <select class="form-select bg-light border-0" name="tipo" id="tipo"
+                                    style="height: 55px;">
+                                    <option selected>Selecciona un área de interés</option>
+                                    <option value="1">Información</option>
+                                    <option value="2">Atención al Cliente</option>
+                                    <option value="3">Oportunidades Laborales</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" id="nombre" name="nombre" class="form-control bg-light border-0"
+                                    placeholder="Nombre Completo" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" id="correo" name="correo" class="form-control bg-light border-0"
+                                    placeholder="email" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-light border-0 datetimepicker-input"
+                                        placeholder="Seleccionar fecha" data-target="#date1"
+                                        data-toggle="datetimepicker" style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="time" id="time1" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-light border-0 datetimepicker-input"
+                                        placeholder="Seleccionar hora" data-target="#time1" data-toggle="datetimepicker"
+                                        style="height: 55px;">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-dark w-100 py-3" type="submit">Enviar solicitud de
+                                    contacto</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- Appointment End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div style="margin-left:50px; margin-right: 50px">
+            <div class="row g-5 mb-5">
+
+                <div class="col-lg-12">
+                    <div class="section-title mb-5">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">NUESTROS PRODUCTOS</h5>
+                        <h1 class="display-6 mb-0 text-primary">CATEGORÍAS PRINCIPALES:</h1>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/pulpa1.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">PULPAS NATURALES</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/pure.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">PURÉS</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/tamarindo1.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">TAMARINDO</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/carambola.jpeg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">FRUTAS FRESCAS</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-12">
+
+                    <div class="row g-5">
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/deli1.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">BEBIDAS NATURALES D'LIS</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/industrial1.png" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">PURÉS INDUSTRIALES</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/aguacate1.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">AGUACATE NACIONAL E IMPORTADO</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/canasta.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">CANASTAS PARA FECHAS ESPECIALES</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+
+                    <div class="row g-5">
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/ajo1.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">AJO IMPORTADO</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/mieles1.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">MIEL DE TAMARINDO</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/congelada1.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">FRUTA TROPICAL CONGELADA</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 service-item wow zoomIn" data-wow-delay="0.6s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/vegetales.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">VEGETALES EN CONSERVA</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Offer Start -->
+    <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+
+            <!-- Pricing Start -->
+            <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-5" style="background-color:  rgba(0, 0, 0, 0.5)">
+                            <div class="section-title mb-4">
+
+                                <h5 class="position-relative d-inline-block text-white text-uppercase mt-5">NUESTROS PRODUCTOS ESTELARES
+                                </h5>
+                                <h1 class="display-5 mb-0" style="color: rgba(24, 237, 223, 0.998)">We Offer Fair Prices
+                                    for Dental Treatment</h1>
+                            </div>
+                            <p class="mb-4 text-white">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
+                                sit. Aliqu
+                                diam
+                                amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit.
+                                Sanctus
+                                clita duo justo eirmod magna dolore erat amet</p>
+                            <h5 class="text-uppercase text-primary wow fadeInUp text-white" data-wow-delay="0.3s">Call
+                                for
+                                Appointment
+                            </h5>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.6s">+012 345 6789</h1>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">
+                                <div class="price-item pb-4">
+                                    <div class="position-relative">
+                                        <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
+                                        <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                            style="z-index: 2;">
+                                            <h2 class="text-primary m-0">$35</h2>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                        <h4>Teeth Whitening</h4>
+                                        <hr class="text-primary w-50 mx-auto mt-0">
+                                        <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                                class="fa fa-check text-primary pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Professional
+                                                Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>24/7 Call
+                                                Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                        <a href="appointment.html"
+                                            class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                                    </div>
+                                </div>
+                                <div class="price-item pb-4">
+                                    <div class="position-relative">
+                                        <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
+                                        <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                            style="z-index: 2;">
+                                            <h2 class="text-primary m-0">$49</h2>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                        <h4>Dental Implant</h4>
+                                        <hr class="text-primary w-50 mx-auto mt-0">
+                                        <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                                class="fa fa-check text-primary pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Professional
+                                                Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>24/7 Call
+                                                Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                        <a href="appointment.html"
+                                            class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                                    </div>
+                                </div>
+                                <div class="price-item pb-4">
+                                    <div class="position-relative">
+                                        <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
+                                        <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                            style="z-index: 2;">
+                                            <h2 class="text-primary m-0">$99</h2>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                        <h4>Root Canal</h4>
+                                        <hr class="text-primary w-50 mx-auto mt-0">
+                                        <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                                class="fa fa-check text-primary pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Professional
+                                                Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>24/7 Call
+                                                Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                        <a href="appointment.html"
+                                            class="btn btn-primary py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing End -->
+        </div>
+    </div>
+    <!-- Offer End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="section-title bg-light rounded h-100 p-5">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Dentist</h5>
+                        <h1 class="display-6 mb-4">Meet Our Certified & Experienced Dentist</h1>
+                        <a href="appointment.html" class="btn btn-primary py-3 px-5">Appointment</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+
+                            <iframe src="https://www.samsacr.com/" class="img-fluid rounded-top w-100"
+                                style="height:22em ;">
+
+
+                            </iframe>
+                            <div
+                                class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h3 class="mb-2">GRUPO SAMSA</h3>
+                            <a target="_blank" href="https://www.samsacr.com/">www.samsacr.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <iframe src="https://samsaporcostarica.com/" class="img-fluid rounded-top w-100"
+                                style="height:22em ;">
+
+                            </iframe>
+                            <div
+                                class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h3 class="mb-2">SAMSA POR CR</h3>
+                            <a target="_blank" href="https://samsaporcostarica.com/">www.samsaporcostarica.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <iframe src="https://samsatec.com/" class="img-fluid rounded-top w-100"
+                                style="height:22em ;">
+
+                            </iframe>
+                            <div
+                                class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h3 class="mb-2">SAMSATEC</h3>
+                            <a target="_blank" href="https://samsatec.com/">www.samsatec.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <img class="img-fluid rounded-top w-100" src="img/team-4.jpg" alt="">
+                            <div
+                                class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Dr. John Doe</h4>
+                            <p class="text-primary mb-0">Implant Surgeon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <img class="img-fluid rounded-top w-100" src="img/team-5.jpg" alt="">
+                            <div
+                                class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i
+                                        class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Dr. John Doe</h4>
+                            <p class="text-primary mb-0">Implant Surgeon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp mb-70" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.8s">
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/eve1.jpeg" alt="">
+                            <p class="fs-5">Gerente General de Grupo SAMSA Corp.
+                                Evelyn Quesada es una empresaria costarricense, Maestría en Administración de Empresas
+                                con énfasis en mercadeo y ventas, cofundadora y directora general de Corporación Grupo
+                                SAMSA de Centro América S.A.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">Evelyn Quesada Mena</h4>
+                        </div>
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/iva1.jpg" alt="">
+                            <p class="fs-5">Directora financiera del negocio y Soporte creativo.
+                                Es la persona encargada de dirigir y planificar cada una de las actividades que
+                                realizamos con las organizaciones que apoyamos.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">Ivannia Quesada Mena</h4>
+                        </div>
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/elena1.jpeg" alt="">
+                            <p class="fs-5">Fundadora de Corporación Grupo Samsa de Centroamérica
+                                Es la persona que fundó, junto a Juan José Quesada, la Corporación Grupo Samsa de
+                                Centroamérica, la cual se encarga de coordinar y supervisar la producción de la empresa.
+                            </p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">Elena Mena Campos</h4>
+                        </div>
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/beto1.jpg" alt="">
+                            <p class="fs-5">Presidente y Director Operativo de Corporación Grupo SAMSA de Centroamérica
+                                S.A..
+                                Encargado de promover y respaldar la participación de la empresa Grupo SAMSA, en el
+                                proyecto de Responsabilidad Social y Ambiental que Samsa representa para Costa Rica</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">Alberto Quesada Mena</h4>
+                        </div>
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/mario1.jpg" alt="">
+                            <p class="fs-5">Líder estratega de Corporación Grupo SAMSA de Centroamérica S.A
+                                En Samsa por Costa Rica tiene a su cargo la planificación, dirección, control y
+                                supervisión de proyectos.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">Mario Quesada Mena</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp mt-5" data-wow-delay="0.3s"
+        style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Accesos Rápidos</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
+                        <a class="text-light mb-2" href="#"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Nosotros</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestros
+                            Productos</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestras
+                            Marcas</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contacto</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Contáctanos</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Cartago, El guarco, Tobosi</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@samsaporcostarica.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+506 7081-5669</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">SIGUENOS EN </h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">CORPORACIÓN GRUPO SAMSA</a>.
+                        Todos los derechos reservados</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
